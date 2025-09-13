@@ -23,14 +23,12 @@ app.post('/api/news', async (req, res) => {
         const { query = "What was a positive news story from today?" } = req.body;
         
         const response = await client.responses.create({
-            model: "o3-deep-research",
-            reasoning: { effort: "high" },
+            model: "o4-mini",
 
             tools: [
                 { type: "web_search" },
             ],
             input: query,
-            include: ["web_search_call.action.sources"]
         });
         
         res.json({
@@ -54,8 +52,7 @@ app.post('/api/news', async (req, res) => {
 app.get('/api/news', async (req, res) => {
     try {
         const response = await client.responses.create({
-            model: "o3-deep-research",
-            reasoning: { effort: "high" },
+            model: "o4-mini",
             tools: [
                 { type: "web_search" },
             ],
