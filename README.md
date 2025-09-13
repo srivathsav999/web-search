@@ -20,8 +20,7 @@ A Node.js web server that provides API endpoints for searching news using OpenAI
 
 1. **Clone or download the project**
    ```bash
-   git clone <your-repo-url>
-   cd gift
+   git clone https://github.com/srivathsav999/web-search/
    ```
 
 2. **Install dependencies**
