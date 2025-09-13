@@ -1,4 +1,4 @@
-# OpenAI News Search API
+# OpenAI Search API
 
 A Node.js web server that provides API endpoints for searching news using OpenAI's GPT models with web search capabilities.
 
